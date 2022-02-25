@@ -140,7 +140,18 @@ height: 100%;
 
 // For medium to large screen size
 @media screen and (min-width:959px) and (max-width: 1259px) {
+  .img{
+    // border: 2px solid blue;
+    height: 500px;
+    width: 100%;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
+    background-size: cover;
+    // background-repeat: no-repeat;
+    z-index: 1;
+    color: white;
+    border-radius: 10px;
 
+  }
 }
 
   // For extra large screen size

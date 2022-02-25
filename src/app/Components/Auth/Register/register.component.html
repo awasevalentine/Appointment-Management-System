@@ -2,92 +2,56 @@
     <mat-card >
     <h1>Sign up</h1>
     <form [formGroup]="registerForm" (ngSubmit)="Register()">
-                <div fxLayout="row" fxLayout.sm="column">
-                <div fxFlex="40%" fxFlex.sm="30%">
-                <div class="form-fields-wrapper">
-                    <mat-form-field>
-                        <input matInput type="text" autocomplete="off" placeholder="FullName or Organization name" formControlName="fullName">
-                    <mat-error *ngIf="this.registerForm.invalid">{{formValidationMessage('fullName')}}</mat-error>
-                    </mat-form-field>
-                </div>
-                <div class="form-fields-wrapper">
-                    <mat-form-field>
-                        <input matInput type="text" autocomplete="off" placeholder="Email" formControlName="email">
-                    <mat-error *ngIf="this.registerForm.invalid">{{formValidationMessage('email')}}</mat-error>
-                    </mat-form-field>
-                </div>
-                <div formGroupName="passwords" class="password-group-wrapper">
-                    <div class="form-fields-wrapper">
-                        <mat-form-field>
-                            <input matInput [type]="!hide ? 'password' : 'text'"  autocomplete="off" placeholder="enter your password" formControlName="password">
-                            <span mat-icon-button matSuffix (click)="hide = !hide">
-                                <mat-icon class="mat-18">{{!hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                    
+          <div class="form-fields-wrapper">
+              <mat-form-field>
+                  <input matInput type="text" autocomplete="off" placeholder="FullName or Organization name" formControlName="fullName">
+              <mat-error *ngIf="this.registerForm.invalid">{{formValidationMessage('fullName')}}</mat-error>
+              </mat-form-field>
+          </div>
+          <div class="form-fields-wrapper">
+              <mat-form-field>
+                  <input matInput type="text" autocomplete="off" placeholder="Email" formControlName="email">
+              <mat-error *ngIf="this.registerForm.invalid">{{formValidationMessage('email')}}</mat-error>
+              </mat-form-field>
+          </div>
+          <div formGroupName="passwords" class="password-group-wrapper">
+              <div class="form-fields-wrapper">
+                  <mat-form-field>
+                      <input matInput [type]="!hide ? 'password' : 'text'"  autocomplete="off" placeholder="enter your password" formControlName="password">
+                          <span mat-icon-button matSuffix (click)="hide = !hide">
+                            <mat-icon class="mat-18">{{!hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                             </span>
-                        <mat-error *ngIf="this.registerForm.invalid">{{passwordValidationMessage('passwords.password')}}</mat-error>
-                        </mat-form-field>
-                    </div>
-                    <div class="form-fields-wrapper">
-                        <mat-form-field>
-                            <input matInput [type]="!cHide ? 'password' : 'text'"  autocomplete="off" placeholder="confirm your password" formControlName="cPassword">
+                      <mat-error *ngIf="this.registerForm.invalid">{{passwordValidationMessage('passwords.password')}}</mat-error>
+                  </mat-form-field>
+              </div>
+              <div class="form-fields-wrapper">
+                    <mat-form-field>
+                        <input matInput [type]="!cHide ? 'password' : 'text'"  autocomplete="off" placeholder="confirm your password" formControlName="cPassword">
                             <span mat-icon-button matSuffix (click)="cHide = !cHide">
-                                <mat-icon class="mat-18">{{!cHide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                              <mat-icon class="mat-18">{{!cHide ? 'visibility_off' : 'visibility'}}</mat-icon>
                             </span>
-                        <mat-error *ngIf="this.registerForm.invalid">{{passwordValidationMessage('passwords.cPassword')}}</mat-error>
+                    <mat-error *ngIf="this.registerForm.invalid">{{passwordValidationMessage('passwords.cPassword')}}</mat-error>
                     </mat-form-field>
                     <!-- field for displaying error message when password and confirm password does not match -->
-                    <div *ngIf="this.confirmPasswordCheck" class="cPassword-error">Password does not match</div>    
-                    </div>
-                </div>
-                <div class="form-fields-wrapper">
-                    <mat-form-field>
-                        <mat-label>Select account type</mat-label>
-                        <mat-select formControlName="account_type">
-                            <mat-option *ngFor="let acct of acct_types" [value]="acct.value">{{acct.value}}</mat-option>
-                        </mat-select>
-                    <mat-error *ngIf="this.registerForm.invalid" >{{formValidationMessage('account_type')}}</mat-error>                    
-                </mat-form-field>
-                </div>
+                    <div *ngIf="this.confirmPasswordCheck" class="cPassword-error">Password does not match</div>
+              </div>
+              </div>
+              <div class="form-fields-wrapper">
+                  <mat-form-field>
+                      <mat-label>Select account type</mat-label>
+                      <mat-select formControlName="account_type">
+                          <mat-option *ngFor="let acct of acct_types" [value]="acct.value">{{acct.value}}</mat-option>
+                      </mat-select>
+                      <mat-error *ngIf="this.registerForm.invalid" >{{formValidationMessage('account_type')}}</mat-error>
+                  </mat-form-field>
+              </div>
                 <button mat-raised-button color="accent" type="submit" class="signupbtn" [disabled]="this.registerForm.invalid || this.confirmPasswordCheck">Sign Up</button>
-                <div *ngIf="progressBar">
+              <div *ngIf="progressBar">
                     <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-                </div>
-                <div class="already-user" style="height:14px;font-family: HelveticaNeue-Regular, HelveticaNeue, robotoregular, Arial, sans-serif; font-size: 13px;color: #2570e0;border: 0;cursor: pointer;text-decoration: none;color: inherit;margin-left: -4px;margin-top: 11px;">
+              </div>
+              <div class="already-user" style="height:14px;font-family: HelveticaNeue-Regular, HelveticaNeue, robotoregular, Arial, sans-serif; font-size: 13px;color: #2570e0;border: 0;cursor: pointer;text-decoration: none;color: inherit;margin-left: 70px;margin-top: 11px;">
                     Already have an account?  <a [routerLink]="['/login']" style="vertical-align: baseline;color: #0033A1;">Login</a>
-                </div>
-            </div>
-                <div fxFlex="20%" fxFlex.sm="100%" fxLayoutAlign="center" class="or-wrapper">
-                <div class="or">OR</div>
-                </div>
-                <div fxFlex="40%" fxFlex.sm="30%">
-                <div class="right">
-                    <span class="loginwiths" style="color: white;">Sign in with<br />social network</span>
-                    <div fxLayout="row" fxLayoutGap="30px" fxHide.gt-sm="true" class="social-media-icons">
-                        <span class="icons">
-                        <a href="#">
-                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                        </a>
-                        </span>
-                        <span class="icons">
-                        <a href="#">
-                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                        </a>
-                        </span>
-                        <span class="icons">
-                        <a>
-                            <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
-                        </a>
-                        </span>
-                    </div>
-                    <div fxHide.lt-md="true">
-                        <button type="button" (click)="resiterUsingGmail()" mat-raised-button class="social-signin facebook">Log in with facebook</button>
-                        <button mat-raised-button class="social-signin twitter">Log in with Twitter</button>
-                        <button type="button" (click)="resiterUsingGmail()" mat-raised-button class="social-signin google">Log in with Google+</button>
-                    </div>
-
-                </div>
-                </div>
-            </div>
+              </div>
     </form>
     </mat-card>
     </div>
