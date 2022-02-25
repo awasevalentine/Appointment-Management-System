@@ -1,0 +1,39 @@
+.content_wrapper{
+    margin-top: 6em;
+    }
+    .form_wrapper{
+        justify-content: center;
+        display: flex;
+        margin-top: 2em;
+    }
+    
+    mat-card > h1{
+        text-align: center;
+        font-size: x-large;
+        font-weight: 500;
+        color: navy;
+    }
+    
+    mat-card{
+        background: rgb(241, 238, 238);
+    }
+    
+    .form_field_wrapper{
+        width: 100%;
+    }
+    
+    mat-form-field{
+        width:300px;
+        margin:1.5em 0px;
+    }
+    
+    #submitBtn > button{
+    width: 600px;
+    // background-color: #E8A87C !important;
+    font-size: large;
+    }
+    
+    #submitBtn{
+        text-align: center;
+        // margin-bottom: 2em;
+    }

@@ -1,0 +1,194 @@
+<div class="defualt-component-wrapper">
+    <div class="top-content-wrapper item" data-aos="fade-down">
+        <hr style="margin-top: 5em; border: 1.2px solid black; background: black;">
+        <h1>Appointment Manager</h1>
+        <h4>Setting reminders and scheduling appointments on fly!</h4>
+    </div>
+    <div class="main-content-wrapper">
+        <mat-grid-list [cols]="columns" rowHeight="2:1">
+            <mat-grid-tile >
+                <div id="starter-wrapper" data-aos="fade-right" data-aos-duration="1500" >
+                    <!-- <h3>Appointment Manager</h3> -->
+                    <p>
+                        Keep track of all your appointments and more while going on with your daily routine without having to worry of forgetting any schedule or appointments.
+                        Set alarms and Calendar for all appointments/tasks, and know which task is completed and those that are still running.
+                    </p>
+                    <div class="btn-wrapper">
+                    <button mat-raised-button color="accent" (click)="loginPage()">Get started</button>
+                    </div>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="calendar-left-wrapper" data-aos="fade-left" data-aos-duration="1500">
+                <h4>
+                    <!-- Set your time table -->
+                </h4>
+                <img src="../../../../assets/Awesome-calendar.jpg" class="img-wrapper" style="border-radius: 5px" alt="Calendar">
+                </div>
+            </mat-grid-tile>
+          </mat-grid-list>
+    <div class="short-note-wrapper" data-aos="fade-up" data-aos-duration="1000">
+       <mat-card>
+        <h1> How it works? </h1>
+                <div id="how-it-works-content-wrapper">
+                <div class="create-appointments-wrapper">
+                <span><i class="fa fa-book fa-5x" aria-hidden="true"></i></span>
+                <h3>Create Appointments</h3>
+                <p>
+                    Keep track of all your appointments and more while going on
+                    with your daily routine without having to worry of forgetting
+                    any schedule or appointments. Set alarms and Calendar for all
+                    appointments/tasks, and know which task is completed and those
+                    that are still running.
+                </p>
+                </div>
+                <div class="set-reminder-wrapper">
+                <span><i class="fa fa-bell fa-5x" aria-hidden="true"></i></span>
+                <h3>Set Reminder</h3>
+                <p>
+                    Keep track of all your appointments and more while going on
+                    with your daily routine without having to worry of forgetting
+                    any schedule or appointments. Set alarms and Calendar for all
+                    appointments/tasks, and know which task is completed and those
+                    that are still running.
+                </p>
+                </div>
+                </div>
+       </mat-card>
+    </div>
+    <div fxHide.xs="true" id="benefit-wrapper" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+        <h1>Features & benefits</h1>
+        <div class="benefit-content-wrapper">
+        <mat-grid-list class="med" cols="4" gutterSize="20px" [rowHeight]="rowHeight">
+            <mat-grid-tile>
+            <div class="grid-tiles-content-wrapper">
+                <h3>Effective</h3>
+               <mat-card class="card-content">
+                    <mat-card-content>Keep track of all your appointments and more
+                         while going on with your daily routine without having to
+                         worry of forgetting any schedule or appointments. Set alarms
+                         and Calendar for all appointments/tasks, and know which task is
+                         completed and those that are still running.
+                    </mat-card-content>
+               </mat-card>
+            </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+            <div class="grid-tiles-content-wrapper">
+                  <h3>Kills overload</h3>
+              <mat-card class="card-content">
+                  <mat-card-content>Keep track of all your appointments and more
+                    while going on with your daily routine without having to
+                    worry of forgetting any schedule or appointments. Set alarms
+                    and Calendar for all appointments/tasks, and know which task is
+                    completed and those that are still running.
+               </mat-card-content>
+               </mat-card>
+            </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+            <div class="grid-tiles-content-wrapper">
+                   <h3>Reduces Stress</h3>
+               <mat-card class="card-content">
+                   <mat-card-content>Keep track of all your appointments and more
+                    while going on with your daily routine without having to
+                    worry of forgetting any schedule or appointments. Set alarms
+                    and Calendar for all appointments/tasks, and know which task is
+                    completed and those that are still running.
+               </mat-card-content>
+               </mat-card>
+            </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+            <div class="grid-tiles-content-wrapper">
+                   <h3>Reminder</h3>
+               <mat-card class="card-content">
+                   <mat-card-content>Keep track of all your appointments and more
+                    while going on with your daily routine without having to
+                    worry of forgetting any schedule or appointments. Set alarms
+                    and Calendar for all appointments/tasks, and know which task is
+                    completed and those that are still running.
+               </mat-card-content>
+                </mat-card>
+            </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+            <div class="grid-tiles-content-wrapper">
+                   <h3>Email Capability</h3>
+               <mat-card class="card-content">
+                   <mat-card-content>Keep track of all your appointments and more
+                    while going on with your daily routine without having to
+                    worry of forgetting any schedule or appointments. Set alarms
+                    and Calendar for all appointments/tasks, and know which task is
+                    completed and those that are still running.
+               </mat-card-content>
+                </mat-card>
+            </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+        </div>
+    </div>
+
+    <!-- For small screen -->
+    <div fxHide.gt-xs="true" id="benefit-wrapper" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+      <h1>Features & benefits</h1>
+      <div class="benefit-content-wrapper">
+          <div class="grid-tiles-content-wrapper">
+              <h3>Effective</h3>
+             <mat-card class="card-content">
+                  <mat-card-content>Keep track of all your appointments and more
+                       while going on with your daily routine without having to
+                       worry of forgetting any schedule or appointments. Set alarms
+                       and Calendar for all appointments/tasks, and know which task is
+                       completed and those that are still running.
+                  </mat-card-content>
+             </mat-card>
+          </div>
+          <div class="grid-tiles-content-wrapper">
+                <h3>Kills overload</h3>
+            <mat-card class="card-content">
+                <mat-card-content>Keep track of all your appointments and more
+                  while going on with your daily routine without having to
+                  worry of forgetting any schedule or appointments. Set alarms
+                  and Calendar for all appointments/tasks, and know which task is
+                  completed and those that are still running.
+             </mat-card-content>
+             </mat-card>
+          </div>
+          <div class="grid-tiles-content-wrapper">
+                 <h3>Reduces Stress</h3>
+             <mat-card class="card-content">
+                 <mat-card-content>Keep track of all your appointments and more
+                  while going on with your daily routine without having to
+                  worry of forgetting any schedule or appointments. Set alarms
+                  and Calendar for all appointments/tasks, and know which task is
+                  completed and those that are still running.
+             </mat-card-content>
+             </mat-card>
+          </div>
+          <div class="grid-tiles-content-wrapper">
+                 <h3>Reminder</h3>
+             <mat-card class="card-content">
+                 <mat-card-content>Keep track of all your appointments and more
+                  while going on with your daily routine without having to
+                  worry of forgetting any schedule or appointments. Set alarms
+                  and Calendar for all appointments/tasks, and know which task is
+                  completed and those that are still running.
+             </mat-card-content>
+              </mat-card>
+          </div>
+          <div class="grid-tiles-content-wrapper">
+                 <h3>Email Capability</h3>
+             <mat-card class="card-content">
+                 <mat-card-content>Keep track of all your appointments and more
+                  while going on with your daily routine without having to
+                  worry of forgetting any schedule or appointments. Set alarms
+                  and Calendar for all appointments/tasks, and know which task is
+                  completed and those that are still running.
+             </mat-card-content>
+              </mat-card>
+          </div>
+      </div>
+  </div>
+    </div>
+</div>

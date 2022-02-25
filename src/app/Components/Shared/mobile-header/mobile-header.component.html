@@ -1,0 +1,54 @@
+<mat-toolbar class="toolbar">
+  <div fxLayout="row" class="flex-container">
+      <div fxHide.lt-md="false" fxFlex.gt-sm="30%" fxFlex.lt-md="20%" fxFlexAlign="center" class="leftside-wrapper">
+          <span class="logo-wrapper">
+              <img src="../../../../assets/Logo/logo2.jpg" height="40px" style="margin-top: 10px; margin-bottom: -10px;" alt="Logo">
+           </span>
+      </div>
+      <div fxFlex.gt-sm="70%" fxFlex.lt-md="100%" class="rightside-wrapper">
+          <div fxlayout="row" fxLayoutAlign.gt-sm="end stretch" fxLayout.lt-md="center">
+              <div fxFlex.gt-sm="2" fxFlex.lt-md="25%" fxFlexAlign="center" class="innerRight-wrapper">
+                  <a [routerLink]="['/']" routerLinkActive="router-link-active" class="home">Home</a>
+              </div>
+              <!-- <div fxFlex.gt-sm="2" fxFlex.lt-md="25%" fxFlexAlign="center" class="innerRight-wrapper">
+                  <a [routerLink]="['/Service']" routerLinkActive="router-link-active">Service</a>
+              </div>
+              <div fxFlex.gt-sm="20" fxFlex.lt-md="25%" fxFlexAlign="center" class="innerRight-wrapper">
+                  <a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a>
+              </div> -->
+              <div fxFlex.gt-sm="10" fxFlex.lt-md="30%" fxFlexAlign="center" class="innerRight-wrapper">
+                  <span *ngIf="!loginStatus" >
+                  <a  class="login_wrapper" [routerLink]="['/login']" routerLinkActive="router-link-active" style="margin-right: 15px;">Login</a>
+                  <!-- <br> -->
+                  <!-- <hr style="width: 50px; margin-left: -5px; margin-top: 1px; margin-bottom: 1px; color: black !important;"> -->
+                  <span class="signup">
+                  <a  [routerLink]="['/register']" routerLinkActive="router-link-active">Sign Up</a>
+                  </span>
+              </span>
+                  <div *ngIf="loginStatus" fxFlexAlign="right">
+                     <a  class="user-wrapper" [matMenuTriggerFor]="userMenu" >
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                     </a>
+
+                  <mat-menu #userMenu="matMenu">
+                      <button mat-menu-item [routerLink]="['/dashboard/home']" routerLinkActive="router-link-active" >
+                          Dashboard
+                      </button>
+                      <button mat-menu-item>
+                        Profile
+                    </button>
+                    <button mat-menu-item>
+                      Notification
+                  </button>
+                  <hr>
+                  <button mat-menu-item type="button" (click)="logoutUser()">
+                      Logout
+                  </button>
+                  </mat-menu>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</mat-toolbar>

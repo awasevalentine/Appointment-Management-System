@@ -1,0 +1,12 @@
+#action_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+
+#action_wrapper> button{
+    width: 80%;
+    background-color: #d4af7a !important;
+    font-size: large;
+}

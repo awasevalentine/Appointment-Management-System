@@ -1,0 +1,569 @@
+.defualt-component-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 247, 247, 0.685);
+}
+
+.main-content-sub {
+  background-image: url("../../../../assets/Calendar-with-person.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.main-content-wrapper{
+    width: 100%;
+    height: 100%;
+}
+// .img-wrapper{
+//     width: fit-content;
+//     height: fit-content;
+//     height: 700px !important;
+// }
+
+.calendar-left-wrapper > h4{
+    color: navy;
+    // padding-top: 30px;
+    font-size: 18px;
+    line-height: 2px;
+    font-weight: 10em;
+}
+.top-content-wrapper > h1{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: -28px;
+    text-align: center;
+    left: 550px;
+    display: inline-block;
+    background: white;
+    color: navy;
+    justify-content: center;
+    padding: 0 14px;
+
+}
+
+.top-content-wrapper > h4 {
+    position: relative;
+    text-align: center;
+    top: -40px;
+    // left: 10px;
+    color: darkred;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#starter-wrapper > p{
+    width: 400px;
+    font-size: 17px;
+}
+
+#starter-wrapper > h3{
+    line-height: 2px;
+    font-weight: bold;
+    display: none;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.btn-wrapper > button{
+        border-radius: 50px;
+        width: 120px;
+        font-size: 15px;
+}
+
+
+
+
+// For extra smaller screen size
+@media screen and (max-width: 599px) {
+  .top-content-wrapper > h1{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: -28px;
+    text-align: center;
+    left: 50px;
+    display: inline-block;
+    background: white;
+    color: navy;
+    justify-content: center;
+    padding: 0 14px;
+}
+
+.top-content-wrapper > hr{
+  margin-top: 3em !important;
+}
+
+.top-content-wrapper > h4 {
+    position: relative;
+    text-align: center;
+    top: -50px;
+    // left: 10px;
+    color: darkred;
+    font-size: 12px;
+    font-style: italic;
+}
+  .defualt-component-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 247, 247, 0.685);
+}
+
+.main-content-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#starter-wrapper > p{
+  width: 300px;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+#starter-wrapper > h3{
+  line-height: 2px;
+  font-weight: bold;
+  display: none;
+}
+
+.calendar-left-wrapper{
+  display: none;
+}
+
+// .calendar-left-wrapper > h4{
+//     color: navy;
+//     // padding-top: 30px;
+//     font-size: 18px;
+//     line-height: 2px;
+//     font-weight: 10em;
+// }
+
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.btn-wrapper > button{
+        border-radius: 50px;
+        width: 120px;
+        font-size: 15px;
+}
+
+// Section for how it works Content
+.short-note-wrapper{
+  margin-top: -10em !important;
+}
+
+.short-note-wrapper > mat-card{
+  width: 80%;
+  left: 20px;
+  box-shadow: none;
+}
+
+
+.short-note-wrapper >mat-card >h1{
+  position: relative;
+  color: navy;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 2em;
+  text-align: center;
+  letter-spacing: 2px;
+
+  // text-shadow: 4px 4px 5px blue;
+}
+
+.create-appointments-wrapper > h3{
+  margin-top: 0.3em;
+  float: right;
+  text-align: center;
+  font-weight: normal;
+  margin-right: 17px;
+  color: navy;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.fa-5x, .fa{
+  font-size: 30px;
+  // color: #FF0266;
+  color: navy;
+  text-align: center;
+  margin-left: 1em;
+}
+
+.create-appointments-wrapper > p{
+  margin-top: 2em;
+  white-space: wrap;
+  text-overflow: clip;
+  word-wrap: normal;
+}
+
+
+.img-wrapper{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.create-appointments-wrapper,.set-reminder-wrapper{
+  width: 100%;
+}
+
+//Setting reminders section
+.set-reminder-wrapper{
+margin-top: 2.5em;
+}
+
+.set-reminder-wrapper > h3{
+  margin-top: 5em;
+  font-weight: normal;
+  margin-top: 0.3em;
+  float: right;
+  text-align: center;
+  font-weight: normal;
+  margin-right: 80px;
+  color: navy;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.set-reminder-wrapper > p{
+  margin-top: 2em;
+  white-space: wrap;
+  text-overflow: clip;
+  word-wrap: normal;
+}
+
+
+// Section for benefit
+.benefit-content-wrapper{
+  width: 100%;
+  position: relative;
+}
+#benefit-wrapper > h1{
+  text-align: center;
+  position: relative;
+  color: navy;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+}
+
+.card-content{
+  width: 100%;
+  // margin: 0 20px;
+  margin-bottom: 2em;
+}
+
+.benefit-content-wrapper{
+  display: flex;
+  // flex-direction: row;
+  width: 100%;
+  overflow-x: auto;
+}
+.benefit-content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-tiles-content-wrapper{
+  margin: 0 25px;
+}
+
+.grid-tiles-content-wrapper > h3{
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+
+}
+
+
+
+// For smaller screen size
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .top-content-wrapper > h1{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: -28px;
+    // text-align: center;
+    left: 50px;
+    display: inline-block;
+    background: white;
+    color: navy;
+    justify-content: center;
+    padding: 0 14px;
+
+}
+
+.top-content-wrapper > h4 {
+    position: relative;
+    text-align: center;
+    top: -40px;
+    // left: 10px;
+    color: darkred;
+    font-size: 12px;
+    font-style: italic;
+}
+  .defualt-component-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 247, 247, 0.685);
+}
+
+.main-content-wrapper{
+    width: 100%;
+    height: 100%;
+}
+// .img-wrapper{
+//     width: fit-content;
+//     height: fit-content;
+//     height: 700px !important;
+// }
+
+.calendar-left-wrapper > h4{
+    color: navy;
+    // padding-top: 30px;
+    font-size: 18px;
+    line-height: 2px;
+    font-weight: 10em;
+}
+
+
+#starter-wrapper > p{
+    width: 400px;
+    font-size: 17px;
+}
+
+#starter-wrapper > h3{
+    line-height: 2px;
+    font-weight: bold;
+    display: none;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.btn-wrapper > button{
+        border-radius: 50px;
+        width: 120px;
+        font-size: 15px;
+}
+
+  }
+
+  // For medium to large screen size
+  @media screen and (min-width:959px) and (max-width: 1259px) {
+    .top-content-wrapper > h1{
+        position: relative;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        top: -28px;
+        text-align: center;
+        left: 400px;
+        display: inline-block;
+        background: white;
+        color: navy;
+        justify-content: center;
+        padding: 0 14px;
+
+    }
+
+    .top-content-wrapper > h4 {
+        position: relative;
+        text-align: center;
+        top: -40px;
+        // left: 20px;
+        color: darkred;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    .calendar-left-wrapper > h4{
+        color: navy;
+        padding-top: 80px;
+        font-size: 18px;
+        line-height: 2px;
+        font-weight: 10em;
+    }
+// Section for how it works Content
+.short-note-wrapper{
+    position: relative;
+    margin-top: 7em;
+    text-align: center;
+}
+
+.short-note-wrapper > mat-card{
+    width: 70%;
+    left: 17%;
+}
+
+.short-note-wrapper >mat-card >h1{
+    position: relative;
+    // color: black;
+    color: navy;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.img-wrapper{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fa{
+    color: #FF0266;
+}
+#how-it-works-content-wrapper{
+    display: flex;
+}
+.create-appointments-wrapper,.set-reminder-wrapper{
+    width: 50%;
+}
+.create-appointments-wrapper > h3{
+    margin-top: 2em;
+    font-weight: 600;
+}
+.set-reminder-wrapper > h3{
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+.set-reminder-wrapper > p{
+    position: relative;
+    left: 15px;
+    width: 90%;
+}
+
+
+// Section for benefit
+
+.benefit-content-wrapper{
+    width: 70%;
+    position: relative;
+    left: 250px;
+}
+#benefit-wrapper > h1{
+    text-align: center;
+    position: relative;
+    color: navy;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2em;
+    margin-top: 4em;
+
+}
+
+.grid-tiles-content-wrapper > h3{
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    line-height: 2px;
+}
+
+
+  }
+
+  // For extra large screen size
+  @media screen and (min-width:1260px) and (max-width: 1919px) {
+    // Section for how it works Content
+.short-note-wrapper{
+    position: relative;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.short-note-wrapper > mat-card{
+    width: 70%;
+    left: 17%;
+}
+
+.short-note-wrapper >mat-card >h1{
+    position: relative;
+    // color: black;
+    color: navy;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.img-wrapper{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fa{
+    color: #FF0266;
+}
+#how-it-works-content-wrapper{
+    display: flex;
+}
+.create-appointments-wrapper,.set-reminder-wrapper{
+    width: 50%;
+}
+.create-appointments-wrapper > h3{
+    margin-top: 2em;
+    font-weight: 600;
+}
+.set-reminder-wrapper > h3{
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+.set-reminder-wrapper > p{
+    position: relative;
+    left: 20px;
+}
+
+
+// Section for benefit
+
+#benefit-wrapper{
+    width: 100%;
+    height: 100%;
+    margin-top: 5em;
+}
+.benefit-content-wrapper{
+    width: 70%;
+    position: relative;
+    left: 250px;
+}
+#benefit-wrapper > h1{
+    text-align: center;
+    position: relative;
+    color: navy;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2em;
+    margin-top: 4em;
+
+}
+
+#benefit-wrapper > mat-grid-list{
+    width: 100%;
+    height: 100%;
+}
+.grid-tiles-content-wrapper > h3{
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    line-height: 2px;
+}
+
+  }

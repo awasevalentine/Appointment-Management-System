@@ -1,0 +1,56 @@
+
+<!-- Section for Email Appointment -->
+<div class="content_wrapper" style="margin-top: 1px !important;">
+    <div class="header_wrapper">
+        <mat-card style="background: #f1eeee !important;">
+            <h1>Send A Mail</h1>
+        </mat-card>
+    </div>
+    <div class="form_wrapper">
+        <form #createAppointmentForm='ngForm' action="">
+            <div fxLayout="row" fxLayoutGap="50px">
+                <div class="form_field_wrapper" fxFlex="50%">
+                    <mat-form-field>
+                        <input matInput type="text" name="title" autocomplete="off" placeholder="Title of Appointment" [(ngModel)] ='appointmentData.title'>
+                    </mat-form-field>
+                </div>
+                <!-- <div class="form_field_wrapper" fxFlex="50%">
+                    <mat-form-field>
+                        <input matInput type="text" name="name" autocomplete="off" placeholder="Name of the person" [(ngModel)] ='appointmentData.name'>
+                    </mat-form-field>
+                </div> -->
+            </div>
+            <div class="appointment_description_wrapper">
+                <div class="form_field_wrapper">
+                    <mat-form-field style="width:100% !important;">
+                        <mat-label>Appointment Description</mat-label>
+                        <textarea matInput autocomplete="off" cdkTextareaAutosize style="overflow:hidden;"
+                        #autosize="cdkTextareaAutosize"
+                        cdkAutosizeMinRows="1"
+                        cdkAutosizeMaxRows="5"name="appointment_description" id="appointment_description"
+                        [(ngModel)] ='appointmentData.appointment_description'>
+                        </textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="50px">
+                <div class="form_field_wrapper" fxFlex="50">
+                    <mat-form-field appearance="standard">
+                        <mat-label>Choose a Appointment Date</mat-label>
+                            <input matInput [min]="today" [matDatepicker]="picker" name="appointment_date" [(ngModel)] ='appointmentData.appointment_date'>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="form_field_wrapper" style="padding-top: 1em;">
+                    <mat-form-field>
+                        <input matInput type="time" name="appointment_time" autocomplete="off" placeholder="Set Appointment Time" [(ngModel)] ='appointmentData.appointment_time'>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div id="submitBtn">
+                <button type="submit" mat-raised-button color="accent" (click)="sendEmail()">Send</button>
+            </div>
+        </form>
+    </div>
+</div>

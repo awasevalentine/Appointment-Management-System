@@ -1,0 +1,25 @@
+<div class="content_wrapper">
+        <div mat-dialog-content>
+            <h1 matDialogTitle>Appointment Title</h1>
+            <p>{{data.title}}</p>
+        </div>
+        <div mat-dialog-content>
+            <h1 matDialogTitle>Organization/Individual Name</h1>
+            <p>{{data.name}}</p>
+        </div>
+        <div mat-dialog-content style="width: 100%; word-break: break-all;">
+            <h1 matDialogTitle>Appointment Description</h1>
+            <p >{{data.appointment_description}}</p>
+        </div>
+        <div mat-dialog-content>
+            <h1 matDialogTitle>Appointment Date</h1>
+            <p>{{data.appointment_date | date: 'mediumDate'}}</p>
+        </div>
+        <div mat-dialog-content>
+            <h1 matDialogTitle>Appointment Time</h1>
+            <p>{{data.appointment_time}}</p>
+        </div>
+        <div mat-dialog-actions id="action_wrapper">
+            <button mat-button (click)="closeDialog()" mat-flat-button color="white">Close</button>
+        </div>
+    </div>

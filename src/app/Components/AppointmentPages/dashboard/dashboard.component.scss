@@ -1,0 +1,102 @@
+.mat-list-item {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.mat-list-item:hover {
+  animation: side-nav 2s;
+  color: #009688;
+}
+.example-sidenav-container{
+    height: 800px;
+}
+
+
+
+
+.mt-lg-5{
+margin-top: -65px !important;
+// position: relative;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+    background: transparent; /* make scrollbar transparent */
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+
+.fa{
+    margin-right: 17px;
+}
+
+.example-is-mobile .example-toolbar {
+  // position: fixed;
+  position: relative;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 1;
+  // top: -50px;
+}
+
+
+//sidenav close icon positioning
+.close{
+  float: right;
+  margin-top: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.dashboard_header > h1{
+  margin: 2em;
+  margin-bottom: 0px !important;
+  color: #009688;
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.example-toolbar{
+  position: relative;
+  top: 55px;
+  color: white;
+}
+
+.example-toolbar:focus{
+  outline: none;
+  border: none;
+}
+
+
+
+@keyframes side-nav {
+  0% {
+    // transform: translateY(10);
+    transform: skewX(20deg);
+    // opacity: 0;
+  }
+
+  100% {
+    // transform: translateY(0);
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 959px) {
+  .example-container{
+    // display: none;
+    margin-top: -100px;
+  }
+
+}
+

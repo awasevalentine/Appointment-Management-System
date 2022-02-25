@@ -1,0 +1,138 @@
+table, .paginator-wrapper{
+    width: 100%;
+    // margin-left: 3em;
+  }
+
+  .operation_wrapper{
+    color: rgb(226, 96, 96)
+  }
+
+  mat-card {
+    // background-color: #85DCBf;
+    background: rgb(241, 238, 238);
+    // background-color: #41B3A3 !important;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+  }
+
+  .mat-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+
+
+  a:hover{
+    cursor: pointer;
+    color: blue;
+  }
+
+  a{
+    margin: 0px 10px;
+  }
+
+  .operation_wrapper a{
+    color: rgb(226, 96, 96)
+  }
+
+  #content-table:hover{
+    background-color: gray;
+  }
+
+  table td.highlight {
+    background-color: #eff5ef !important;
+    color: black;
+}
+
+.cell_wrapper{
+  width: 150px;
+  word-break: break-all;
+  padding: 0 10px;
+}
+
+.cell_wrapper a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+th.mat-header-cell:last-of-type, td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type {
+  padding-right: 0px !important;
+}
+
+th {
+ font-family: 'Lato', sans-serif;
+ font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 959px) {
+
+ // for setting the table cell width for text
+
+ .cell_wrapper{
+  width: 250px;
+  word-break: break-all;
+  padding: 0 10px;
+}
+
+th {
+  font-size: 15px;
+  color: black;
+}
+
+.fa{
+  font-size: 11px !important;
+
+}
+
+.operation_wrapper > a{
+  margin: 3px !important;
+
+}
+
+}
+
+// For medium to large screen size
+@media screen and (min-width:959px) and (max-width: 1259px) {
+  // for setting the table cell width for text
+  .cell_wrapper{
+    width: 140px;
+    word-break: break-all;
+    padding: 0 10px;
+  }
+
+  th {
+    color: black;
+    font-size: .9rem;
+
+  }
+
+  .date_time_wrapper{
+    width: 100px !important;
+  }
+}
+
+  // For extra large screen size
+  @media screen and (min-width:1260px) and (max-width: 1919px) {
+
+    th {
+      color: black;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .cell_wrapper{
+      width: 200px;
+      word-break: break-all;
+      padding: 0 10px;
+    }
+
+    .cell_wrapper:first-child{
+      padding-left: 15px!important;
+    }
+    .date_time_wrapper{
+      width: 100px !important;
+    }
+  }

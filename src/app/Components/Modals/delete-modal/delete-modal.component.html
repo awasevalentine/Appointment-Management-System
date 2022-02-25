@@ -1,0 +1,18 @@
+<div class="delete-content-wrapper">
+  <mat-card>
+     <h1 mat-dialog-title><strong>{{action}}</strong></h1>
+   </mat-card>
+<div mat-dialog-content class="mat_content_wrapper">
+    <span>
+      Sure you want to cancel the following Appointment:
+      <p><b>{{data.title}}</b> ? </p>
+    </span>
+</div>
+<div class="btn_wrapper">
+ <div mat-dialog-actions>
+  <!-- <button mat-button (click)="deleteAppointment()">{{action}}</button> -->
+  <button mat-button (click)="deleteAppointment()">Submit</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+ </div>
+</div>
+</div>

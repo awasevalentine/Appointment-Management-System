@@ -1,0 +1,35 @@
+
+
+.content_wrapper{
+    margin: 0 30px;
+}
+
+p{
+  width: 400px !important;
+  margin-bottom:  20px;
+  margin-top: -20px;
+  word-break: break-all;
+}
+
+h1{
+font-size: 1.1rem;
+font-weight: 700;
+font-family: 'Lato', sans-serif;
+clear: both;
+color: #139487 ;
+text-transform: capitalize;
+line-height: 40px;
+}
+
+// div P{
+//     text-transform: capitalize;
+//     font-size: 13px;
+//     line-height: 1px;
+// }
+
+#action_wrapper > button{
+ width: 1000px;
+ color: white;
+ font-size: 20px;
+ background-color: #d4af7a;
+}

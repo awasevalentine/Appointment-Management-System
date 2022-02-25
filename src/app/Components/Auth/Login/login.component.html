@@ -1,0 +1,116 @@
+  <div class="container">
+  <div class="main-content-wrapper">
+    <div fxLayout="row" fxLayoutGap="10px" style="width: 100%;">
+      <div fxFlex="50%" fxFlex.lt-md="100%" class="login-wrapper">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+         <h2>Welcome back,</h2>
+      <div class="form-field-wrapper">
+        <mat-form-field >
+          <input matInput type="text" autocomplete="off" placeholder="Email" formControlName="email">
+        <mat-error *ngIf="this.loginForm.invalid">{{errorMessage("email")}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-field-wrapper">
+        <mat-form-field>
+          <input matInput type="password" autocomplete="off" placeholder="Password" formControlName="password">
+          <mat-error *ngIf="this.loginForm.invalid">{{errorMessage("password")}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="forgot-field-wrapper">
+        <a href="#">Forgot password?</a>
+      </div>
+      <div fxHide.gt-sm="true" class="already-user" style="text-align: center; height:14px;font-family: HelveticaNeue-Regular, HelveticaNeue, robotoregular, Arial, sans-serif; font-size: 13px;color: #2570e0;border: 0;cursor: pointer;text-decoration: none;color: inherit;margin-left: -4px;margin-top: 0px;">
+        Don't have an account?  <a [routerLink]="['/register']" style="vertical-align: baseline;color: #0033A1;">Sign up</a>
+    </div>
+      <div class="btn-wrapper">
+        <button mat-raised-button class="signin-btn">SIGN IN</button>
+      </div>
+      <div class="btn-wrapper">
+      <button mat-raised-button class="gmail-btn">Connect with <span>Gmail</span></button>
+      </div>
+    </form>
+  </div>
+
+    <div fxFlex="40%" class="signup-wrapper">
+      <div class="img">
+      <h2>New here?</h2>
+      <p>Sign up and have those appointments booked and well manage!</p>
+      <div class="signup-btn">
+        <button mat-raised-button type="button" (click)="register()">Sign Up</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  <div>
+  <p class="tip">Click on button in image container</p>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Welcome back,</h2>
+      <label>
+        <span>Email</span>
+        <input type="email" />
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" />
+      </label>
+      <p class="forgot-pass">Forgot password?</p>
+      <button type="button" class="submit">Sign In</button>
+      <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+    </div>
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img__text m--up">
+          <h2>New here?</h2>
+          <p>Sign up and discover great amount of new opportunities!</p>
+        </div>
+        <div class="img__text m--in">
+          <h2>One of us?</h2>
+          <p>If you already has an account, just sign in. We've missed you!</p>
+        </div>
+        <div class="img__btn">
+          <span class="m--up">Sign Up</span>
+          <span class="m--in">Sign In</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+        <h2>Time to feel like home,</h2>
+        <label>
+          <span>Name</span>
+          <input type="text" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" />
+        </label>
+        <button type="button" class="submit">Sign Up</button>
+        <button type="button" class="fb-btn">Join with <span>facebook</span></button>
+      </div>
+    </div>
+  </div>
+  </div> -->
+
+  <!-- <a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link">
+    <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+  </a>
+  <a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+  </a> -->
