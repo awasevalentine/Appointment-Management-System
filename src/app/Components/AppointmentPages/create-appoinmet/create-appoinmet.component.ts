@@ -20,6 +20,7 @@ export class CreateAppoinmetComponent implements OnInit {
   createAppointmentForm!: Form
   appointmentDetails!:NewAppointmentDto;
   isUpdated:boolean =false;
+  isCreatingAppointment: boolean = false;
 
   @Input()title!: any;
   @Input()appointmentData!:AppointmentDetails;
@@ -86,18 +87,21 @@ export class CreateAppoinmetComponent implements OnInit {
 
 
   create(){
+    this.isCreatingAppointment = true
     this.appointmentDetails.userAuthId = this._authService.getUserId();
     this.appointmentDetails.status = AppointmentStatus.RUNNING
     this.appointmentDetails.appointment_time = this.onTimeChange(this.appointmentDetails.appointment_time)
     return this._appointmentService.createAppointment(this.appointmentDetails).subscribe(
       (data) =>{
         if(data){
-           this._responseMsg.Response(data.message);
+           this._responseMsg.Response('Appointment Created successfully!');
            this._router.navigateByUrl('dashboard/home');
+           this.isCreatingAppointment = false
         }
       },
       (err) =>{
         this._responseMsg.Response(err.message);
+        this.isCreatingAppointment = false
       }
 
     );

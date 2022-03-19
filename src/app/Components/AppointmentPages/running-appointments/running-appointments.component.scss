@@ -7,6 +7,18 @@ table, .paginator-wrapper{
     height: 100%;
   }
 
+  .loadSpinner{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.13);
+  }
+
+  .spinner-border {
+    margin-top: 20%;
+    margin-left: -5%;
+
+  }
+
   mat-card {
     background: rgb(241, 238, 238);
     display: flex;
