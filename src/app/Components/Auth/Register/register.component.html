@@ -1,6 +1,7 @@
 <div class="main-wrapper">
     <mat-card >
     <h1>Sign up</h1>
+    <div class="form-wrapper">
     <form [formGroup]="registerForm" (ngSubmit)="Register()">
           <div class="form-fields-wrapper">
               <mat-form-field>
@@ -53,5 +54,6 @@
                     Already have an account?  <a [routerLink]="['/login']" style="vertical-align: baseline;color: #0033A1;">Login</a>
               </div>
     </form>
+    </div>
     </mat-card>
     </div>

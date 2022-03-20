@@ -112,6 +112,11 @@
                     </mat-form-field>
                 </div>
             </div>
+            <div class="form_field_wrapper" style="padding-top: -3em; display: block !important;">
+              <mat-form-field style="width: 100%;">
+                  <input matInput type="email" name="appointment_email" autocomplete="off" placeholder="Enter Email of the Organization or Individual" [(ngModel)] ='appointmentDetails.appointment_email'>
+              </mat-form-field>
+          </div>
             <div id="submitBtn">
                 <button type="submit" mat-raised-button color="accent" (click)="updateAppointment()">Update</button>
             </div>
